@@ -12,9 +12,9 @@ route.use(authBearer)
 
 route.post("/user", ...handlerCreateUser)
 route.get("/users", handlerFetchAllUser)
-route.get("/fetch-user-data/:doc_id", handlerFetchUser)
-route.put("/update-user-data/:doc_id", ...handleUpdateUser)
-route.delete("/delete-user-data/:doc_id", handlerDeleteUser)
+route.get("/user/:doc_id", handlerFetchUser)
+route.put("/user/:doc_id", ...handleUpdateUser)
+route.delete("/user/:doc_id", handlerDeleteUser)
 
 
 export default route;
